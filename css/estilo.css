@@ -261,3 +261,220 @@ footer {
         max-width: 100%;
     }
 }
+
+
+/* PALETA DE COLORES - ESTILO */
+
+.contenedor-colores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.color-box {
+    width: 200px;
+    height: 150px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.color-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.color-box span {
+    background-color: rgba(0,0,0,0.3);
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.5rem;
+}
+
+/* COLORES CORPORATIVOS */
+
+.contenedor-colores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.color-box {
+    width: 200px;
+    height: 150px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.color-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.color-box span {
+    background-color: rgba(0,0,0,0.3);
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.5rem;
+}
+
+/* TIPOGRAFÍAS DE MARCA */
+
+.tipografias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.tipografia {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f6f6f3;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 250px;
+}
+
+.nombre-fuente {
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.preview-fuente {
+    padding: 1.5rem 0;
+}
+
+.preview-fuente span {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.preview-fuente small {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Fuentes específicas */
+
+.fuente-alice span {
+    font-family: 'Alice', serif;
+}
+
+.fuente-arimo span {
+    font-family: 'Arimo', sans-serif;
+}
+
+/* SECCIÓN LOGOTIPO */
+.logotipo-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.logotipo-imagen img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* SECCIÓN MAL USO */
+.mal-uso {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    background-color: #f6de2f;
+}
+
+/* Texto a la izquierda */
+.maluso-texto {
+    flex: 1 1 300px;
+    max-width: 500px;
+    position: relative;
+}
+
+.maluso-texto h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.maluso-texto p {
+    font-size: 1rem;
+    color: #222;
+}
+
+/* Círculos decorativos */
+.circulo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.blanco {
+    background-color: white;
+    border: 2px solid #000;
+}
+
+.negro {
+    background-color: #000;
+}
+
+/* Galería de imágenes a la derecha */
+.maluso-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+
+.maluso-galeria img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Responsive para móvil */
+@media screen and (max-width: 768px) {
+    .mal-uso {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .maluso-galeria {
+        grid-template-columns: 1fr;
+    }
+}
