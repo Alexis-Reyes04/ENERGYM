@@ -454,15 +454,17 @@ footer {
 
 /* Galería de imágenes a la derecha */
 .maluso-galeria {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    display: flex;          /* Cambiado de grid a flex */
+    flex-direction: column; /* Imágenes en columna */
+    gap: 1.5rem;
     flex: 1 1 300px;
     max-width: 500px;
 }
 
 .maluso-galeria img {
-    width: 100%;
+    width: 100%;        /* Ocupa todo el ancho del contenedor */
+    max-width: 450px;   /* Puedes ajustar este valor para que sea más grande o pequeño */
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
