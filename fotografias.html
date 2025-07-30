@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fotografías - EnerGym</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/estilo.css" />
+</head>
+<body>
+
+  <!-- Encabezado coherente con el sitio -->
+  <header>
+    <div class="logo-con-titulo">
+      <img src="../image/LogoTipo Gym Grupo L.jpg" alt="Logo EnerGym">
+      <h2>EnerGym</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="introduccion.html">Sobre la Marca</a></li>
+        <li><a href="colores.html">Identidad Visual</a></li>
+        <li><a href="logotipo.html">Logotipo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="titulo">Galería Energy Gym</h1>
+
+    <!-- Imágenes fijas -->
+    <section class="imagenes-fijas">
+      <img src="../image/bolso.jpg" alt="Fija 1">
+      <img src="../image/camisa gym.jpg" alt="Fija 2">
+      <img src="../image/tambo decorativo.jpg" alt="Fija 3">
+    </section>
+
+    <!-- Carrusel automático -->
+    <section class="carrusel">
+      <div class="slide fade">
+        <img src="../image/gym 1.jpg" alt="Carrusel 1">
+      </div>
+      <div class="slide fade">
+        <img src="../image/gym 2.jpg" alt="Carrusel 2">
+      </div>
+      <div class="slide fade">
+        <img src="../image/gym 3.jpg" alt="Carrusel 3">
+      </div>
+      <div class="slide fade">
+        <img src="../image/gym 4.jpg" alt="Carrusel 4">
+      </div>
+      <div class="slide fade">
+        <img src="../image/gym 5.jpg" alt="Carrusel 5">
+      </div>
+      <div class="slide fade">
+        <img src="../image/gym 6.jpg" alt="Carrusel 6">
+      </div>
+      <div class="slide fade">
+        <img src="../image/gym 7.jpg" alt="Carrusel 7">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EnerGym - Todos los derechos reservados</p>
+  </footer>
+
+
+  <script>
+    let index = 0;
+    const slides = document.getElementsByClassName("slide");
+
+    function showSlides() {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      index++;
+      if (index > slides.length) { index = 1; }
+      slides[index - 1].style.display = "block";
+      setTimeout(showSlides, 3000);
+    }
+
+    showSlides();
+  </script>
+
+</body>
+</html>
