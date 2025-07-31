@@ -414,7 +414,7 @@ footer {
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* SECCIÓN MAL USO */
+/* seccion mal uso */
 .mal-uso {
     display: flex;
     flex-wrap: wrap;
@@ -462,7 +462,7 @@ footer {
 
 /* Galería de imágenes a la derecha */
 .maluso-galeria {
-    display: flex;          /* Cambiado de grid a flex */
+    display: flex;          
     flex-direction: column; /* Imágenes en columna */
     gap: 1.5rem;
     flex: 1 1 300px;
@@ -471,13 +471,12 @@ footer {
 
 .maluso-galeria img {
     width: 100%;        /* Ocupa todo el ancho del contenedor */
-    max-width: 450px;   /* Puedes ajustar este valor para que sea más grande o pequeño */
+    max-width: 450px;   
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-/* Responsive para móvil */
 @media screen and (max-width: 768px) {
     .mal-uso {
         flex-direction: column;
@@ -685,7 +684,7 @@ body {
   color: #003e93;
 }
 
-/* Imágenes fijas en fila y más pequeñas */
+/* Imágenes fijas en fila  */
 .imagenes-fijas {
   display: flex;
   justify-content: center;
@@ -708,7 +707,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Carrusel ajustado y más pequeño */
 .carrusel {
   max-width: 600px;
   margin: 2rem auto;
